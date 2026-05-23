@@ -56,8 +56,11 @@ def sum_even_numbers_in_list_while(list_numbers):
 
 
 def sum_even_numbers_in_list_for(list_numbers):
-    # Write here your code
-    pass
+     total=0
+    for number in list_numbers:
+        if number %2 == 0:
+            total =total + number
+    return total
 
 
 def sum_even_numbers_in_list_do_while(list_numbers):
