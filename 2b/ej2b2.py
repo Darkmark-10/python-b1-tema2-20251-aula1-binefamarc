@@ -62,8 +62,10 @@ L'any a comprovar serà '2000', de manera que:
 
 def check_leap_year(
     year):
-    # Write here your code
-    pass
+    if int(year) % 4 !=0 and int(year) % 400 !=0:
+        return False
+    else:
+        return True
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el
