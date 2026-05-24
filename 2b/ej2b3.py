@@ -49,8 +49,12 @@ Exemple:
 
 def triangle_area_calculate(
     base, height):
-    # Write here your code
-    pass
+    if base <0 or height <0:  # Han de ser números positius
+        return (f"els números han de ser majors de zero")
+    else:  
+        triangle_area = (base * height) / 2  # Fórmula: (base * height) / 2   
+    return triangle_area  # Retornem el resultat
+
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta
